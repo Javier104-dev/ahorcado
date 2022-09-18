@@ -1,0 +1,132 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+h1{
+    text-align: center;
+    padding: 2%;
+    margin: 0px;
+    font-size: 50px;
+}
+
+.contenedor-pag-principal{
+    display: flex; /* se necesita de un contentedor para que sus items se puedan mover*/
+    align-items: center; /*pone los items al centro*/
+    position: absolute; /*se coloca en sobre el contenedor por que es flex */
+    flex-direction: column;
+    top:40%; 
+    left:43%; /* alineados al medio de la pantalla*/  
+}
+
+.campo-nueva-palabra{
+    width: 14em;
+    height: 2em;
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px #000000 solid;
+}
+
+.boton-iniciar{
+    background: rgb(41, 146, 231);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    margin: 1em;
+    justify-content: center;
+    border: 0px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.boton-iniciar:hover{
+    background: rgb(5, 62, 109);
+    transform: scale(1.1);
+}
+
+.boton-iniciar:active{
+    background: rgb(41, 146, 231);
+    transform: scale(1);
+}
+
+.div-texto{
+    display: none;
+    position: absolute;
+    flex-direction: column; /*pone en columna los items que estan dentro del div flex*/
+    top:80%; 
+    left:44%;
+    align-items: center;
+}
+
+.campo-texto{
+    width: 60px;
+    height: 30px;
+    margin: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#boton-jugar-nuevamente{
+    position: absolute;
+    top:67%; 
+    left:44%;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background: rgb(41, 146, 231);
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    transition: 0.1s;
+}
+
+#boton-jugar-nuevamente:hover{
+    background: rgb(5, 62, 109);
+    transform: scale(1.1);
+}
+
+#boton-jugar-nuevamente:active{
+    background: rgb(41, 146, 231);
+    transform: scale(1);
+}
+
+.div-texto button{
+    border: 0;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background: rgb(41, 146, 231);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.div-texto button:hover{
+    background: rgb(5, 62, 109);
+    transform: scale(1.1);
+}
+
+.div-texto button:active{
+    background: rgb(41, 146, 231);
+    transform: scale(1);
+}
+
+.canvas{
+    margin: auto;
+    width: 1200px /* se crea el contenedor, se pone el mismo ancho del vancas y ahora se puede mover sus margenes*/
+}
+
+footer{
+    background: url(./textura-oscura-acuarela_125540-769.jpg);
+    text-align: center;
+    padding: 3% 0 3% ;
+    font-size: 20px;
+    color: white;
+}

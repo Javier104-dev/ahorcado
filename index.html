@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+        <title>Ahoracado Alura</title>
+    </head>
+    <body>
+        <header>
+            <h1>Juego del Ahorcado</h1>
+        </header>
+        <main class="main">
+
+            <div id="frente-pagina" class="contenedor-pag-principal">
+                <input class="boton-iniciar" type="button" value="Iniciar Juego" id="iniciar-juego">
+                <button class="boton-iniciar" type="button" id="boton-agregar-palabra">Agregar palabra</button>
+                <input class="campo-nueva-palabra" id="campo-agregar-palabra" type="text" maxlength="20" placeholder="Escribe tu palabra" required>
+            </div>
+
+            <div class="div-texto" >
+                <input class="campo-texto" type="text" id="letra-elegida" maxlength="1"></input>
+                
+                <button class="boton-texto" id="letra-boton" >Escribe la letra</button>
+            </div>
+
+            <button class="boton-nuevo-juego" type="button" id= "boton-jugar-nuevamente">Jugar de nuevo</button>
+            
+            <div id="canvas-ahoracado" class="canvas">
+                <canvas id="horca" width="1200" height="860"></canvas>
+ 
+                <div class="guiones">
+                </div>
+            </div>
+
+        <main>
+        <footer>
+            <p>Juego del ahorcado, creado por Javier V.</p>
+        </footer>
+        <script src="./javascript.js"></script>
+        <script src="./canvas.js"></script>
+    </body>
+</html>
