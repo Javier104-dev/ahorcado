@@ -6,12 +6,11 @@ let letraEscrita = "";
 let letrasAcertadas = [];
 let intentosFallidos = 0;
 
-
 document.querySelector("#iniciar-juego").onclick = function(){
     iniciarJuego();
     escogerPalabraSecreta();
     DibujarBaseAhorcado();
-    dibujarGuiones("#DB146C");
+    dibujarGuiones();
     verBoton();
     console.log(palabraSecretaSeparada);
     console.log(palabras);
@@ -43,33 +42,25 @@ function iniciarJuego(){
 }
 
 function dibujarLetras(){
-    tablero.font = "30px Arial";
+    tablero.font = "bold 30px 'Montserrat', sans-serif";
     tablero.fillStyle = "black";
     tablero.textAlign = "center";
 
     let anchura = 700/palabraSecretaSeparada.length;
-
+    
     for (let i = 0; i <palabraSecretaSeparada.length; i++){
+        
         if (letraEscrita == palabraSecretaSeparada[i] ){
             tablero.fillText(letraEscrita, 325 + (anchura * i), 630);
             letrasAcertadas.push(letraEscrita);
-            console.log(letrasAcertadas);
-
-            if(letrasAcertadas.length == palabraSecretaSeparada.length){
-                mensajeVictoria();
-                dibujarGuiones();
-                ocultarBotones();
-                document.querySelector("#boton-jugar-nuevamente").style.display="block";
-            }  
         }
         document.querySelector("#letra-elegida").focus();
         document.querySelector("#letra-elegida").value = "";
     }
+    victoria();
 }
 
 function dibujarLetrasUsadas(){
-
-    
 
     if(!palabraSecretaSeparada.includes(letraEscrita) && (!letraEscrita == "")){
 
@@ -107,7 +98,6 @@ function dibujarLetrasUsadas(){
             if(intentosFallidos == 9){
                 dibujarPiernaDerch();
                 mensajeDerrota();
-                dibujarGuiones();
                 ocultarBotones();
                 document.querySelector("#boton-jugar-nuevamente").style.display="block"
             }   
@@ -115,7 +105,8 @@ function dibujarLetrasUsadas(){
 }
 
 function letrasErradas(){
-    tablero.font = "20px Arial";
+
+    tablero.font = "bold 25px 'Montserrat', sans-serif";
     tablero.fillStyle = "black";
     tablero.fillText(letraEscrita, 325 + (20 * intentosFallidos) , 550);
     intentosFallidos++;   
@@ -137,6 +128,16 @@ function agregarPalabra(){
         palabras.push(agregaPalabra.value);
         agregaPalabra.value = "";
         agregaPalabra.placeholder = "Palabra agregada";
-        console.log(palabras)
+    }
+}
+
+function victoria(){
+    const arraySinRepetidos = [...new Set(palabraSecretaSeparada)];
+    const arraySinRepetidos2 = [...new Set(letrasAcertadas)];
+
+    if(arraySinRepetidos.length == arraySinRepetidos2.length){
+        mensajeVictoria();
+        ocultarBotones();
+        document.querySelector("#boton-jugar-nuevamente").style.display="block";
     }
 }

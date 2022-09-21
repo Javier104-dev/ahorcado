@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    text-shadow: 5px 5px 7px #08090c;
 }
 
 h1{
@@ -43,6 +44,7 @@ h1{
     border: 0px;
     transition: 0.1s;
     cursor: pointer;
+    box-shadow: 5px 5px 7px #08090c;
 }
 
 .boton-iniciar:hover{
@@ -60,7 +62,7 @@ h1{
     position: absolute;
     flex-direction: column; /*pone en columna los items que estan dentro del div flex*/
     top:80%; 
-    left:44%;
+    left:43%;
     align-items: center;
 }
 
@@ -70,6 +72,8 @@ h1{
     margin: 1em;
     text-align: center;
     text-transform: uppercase;
+    border-radius: 8px;
+    border: 1px #000000 solid;
 }
 
 #boton-jugar-nuevamente{
@@ -85,6 +89,7 @@ h1{
     cursor: pointer;
     display: none;
     transition: 0.1s;
+    box-shadow: 5px 5px 7px #08090c;
 }
 
 #boton-jugar-nuevamente:hover{
@@ -106,6 +111,7 @@ h1{
     border-radius: 10px;
     cursor: pointer;
     transition: 0.1s;
+    box-shadow: 5px 5px 7px #08090c;
 }
 
 .div-texto button:hover{
@@ -118,15 +124,65 @@ h1{
     transform: scale(1);
 }
 
+
+
 .canvas{
     margin: auto;
     width: 1200px /* se crea el contenedor, se pone el mismo ancho del vancas y ahora se puede mover sus margenes*/
 }
 
-footer{
+footer p{
     background: url(./textura-oscura-acuarela_125540-769.jpg);
     text-align: center;
     padding: 3% 0 3% ;
     font-size: 20px;
     color: white;
+    margin: 0px;
 }
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+        padding: 1em;
+        font-size: 50px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    
+    .contenedor-pag-principal {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        flex-direction: column;
+        top: 50%;
+        left: auto;
+        margin: 2em 30%;
+    }
+
+    .div-texto{
+        top: 67%;
+        left: 32%;
+    }
+
+    #boton-nuevo-juego{
+        top: 60%;
+        left: 33%
+    }
+
+    #boton-jugar-nuevamente{
+        top: 60%;
+        left: 33%
+    }
+
+    .canvas, #horca{
+        width: 480px;
+        margin-bottom: 3em;
+    }
+
+    footer p{
+        padding: 4em 0 4em;
+        margin: 0px;
+        font-size: 15px;
+    }
+}   
