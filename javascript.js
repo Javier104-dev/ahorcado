@@ -20,11 +20,13 @@ document.querySelector("#boton-agregar-palabra").onclick = function(){
     agregarPalabra()
 }
 
-document.querySelector("#letra-boton").onclick = function(){
+document.querySelector("#letra-boton").onclick = function(event){
     letraEscrita = document.querySelector("#letra-elegida").value.toUpperCase();
     dibujarLetras();
     dibujarLetrasUsadas();
     console.log(letraEscrita);
+    
+    event.preventDefault()
 }
 
 document.querySelector("#boton-jugar-nuevamente").onclick = function(){

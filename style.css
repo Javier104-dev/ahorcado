@@ -6,11 +6,13 @@ body{
     text-shadow: 5px 5px 7px #08090c;
 }
 
+/* linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
 h1{
     text-align: center;
     padding: 2%;
     margin: 0px;
     font-size: 50px;
+    margin: 1em auto;
 }
 
 .contenedor-pag-principal{
@@ -147,7 +149,7 @@ footer p{
         padding: 1em;
         font-size: 50px;
         max-width: 50%;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     
     .contenedor-pag-principal {
@@ -176,7 +178,7 @@ footer p{
     }
 
     .canvas, #horca{
-        width: 480px;
+        width: 450px;
         margin-bottom: 3em;
     }
 
