@@ -14,6 +14,7 @@ document.querySelector("#iniciar-juego").onclick = function(){
     verBoton();
     console.log(palabraSecretaSeparada);
     console.log(palabras);
+    document.querySelector("#letra-elegida").focus();
 }
 
 document.querySelector("#boton-agregar-palabra").onclick = function(){
