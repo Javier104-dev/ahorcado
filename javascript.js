@@ -13,10 +13,12 @@ document.querySelector("#iniciar-juego").onclick = function(){
     dibujarGuiones();
     console.log(palabras);
     console.log(palabraSecreta);
+    document.querySelector("#boton-jugar-nuevamente").focus();
 
     document.onkeydown = function letrasIngresadas(e){
 
         letraEscrita = e.key.toUpperCase();
+
         if(/^[A-Z]$/.test(letraEscrita)){
 
         dibujarLetrasCorrectas();
@@ -33,6 +35,7 @@ document.querySelector("#boton-agregar-palabra").onclick = function(){
 
 
 document.querySelector("#boton-jugar-nuevamente").onclick = function(){
+
     location.reload();
 }
 
