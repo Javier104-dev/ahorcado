@@ -14,6 +14,9 @@ document.querySelector("#iniciar-juego").onclick = function(){
     console.log(palabras);
     console.log(palabraSecreta);
 
+    letraEscrita = document.querySelector("#teclado").value;
+    
+
     document.onkeydown = function letrasIngresadas(e){
 
         letraEscrita = e.key.toUpperCase();
@@ -134,24 +137,3 @@ function victoria(){
         document.querySelector("#boton-jugar-nuevamente").style.display="block";
     }
 }
-
-
-
-
-function verificarTeclaMobile() {
-    MOBILEINPUT.addEventListener("input", function (e) {
-      setTimeout(() => {
-        MOBILEINPUT.value = "";
-      }, 150);
-      let letraPresionada = e.data;
-      letraSeleccionada = letraPresionada;
-      let padron = /[A-Z]/g;
-      let resultadoPadron = padron.test(letraPresionada);
-  
-      if (resultadoPadron != true) {
-          alert( "INGRESE LETRAS EN MAYUSCULAS")
-      } else {
-        dibujarLetra();
-      }
-    });
-  }
