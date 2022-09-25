@@ -13,7 +13,6 @@ document.querySelector("#iniciar-juego").onclick = function(){
     dibujarGuiones();
     console.log(palabras);
     console.log(palabraSecreta);
-    document.querySelector("#boton-jugar-nuevamente").focus();
 
     document.onkeydown = function letrasIngresadas(e){
 
