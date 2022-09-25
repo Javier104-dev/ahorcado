@@ -129,14 +129,9 @@ footer p{
         margin: 2em 25%;
     }
 
-    #boton-nuevo-juego{
-        top: 60%;
-        left: 33%
-    }
-
     #boton-jugar-nuevamente{
-        bottom: 170px;
-        left: 33%
+        bottom: 304px;
+        left: 30%;
     }
 
     .canvas, #horca{
