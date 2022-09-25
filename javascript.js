@@ -7,28 +7,30 @@ let letrasAcertadas = [];
 let intentosFallidos = 0;
 
 document.querySelector("#iniciar-juego").onclick = function(){
-    iniciarJuego();
+    ocultarFrente();
     escogerPalabraSecreta();
     DibujarBaseAhorcado();
     dibujarGuiones();
-    verBoton();
-    console.log(palabraSecretaSeparada);
     console.log(palabras);
-    document.querySelector("#letra-elegida").focus();
+    console.log(palabraSecreta);
+
+    document.onkeydown = function letrasIngresadas(e){
+
+        letraEscrita = e.key.toUpperCase();
+        if(/^[A-Z]$/.test(letraEscrita)){
+
+        dibujarLetrasCorrectas();
+        dibujarPersona();
+        console.log(letraEscrita)
+        }
+    }
 }
 
 document.querySelector("#boton-agregar-palabra").onclick = function(){
     agregarPalabra()
 }
 
-document.querySelector("#letra-boton").onclick = function(event){
-    letraEscrita = document.querySelector("#letra-elegida").value.toUpperCase();
-    dibujarLetras();
-    dibujarLetrasUsadas();
-    console.log(letraEscrita);
-    
-    event.preventDefault()
-}
+
 
 document.querySelector("#boton-jugar-nuevamente").onclick = function(){
     location.reload();
@@ -40,12 +42,13 @@ function escogerPalabraSecreta(){
     palabraSecretaSeparada = palabra.split("");
 }
 
-function iniciarJuego(){
+function ocultarFrente(){
     document.querySelector("#frente-pagina").style.display = "none";
+
 }
 
-function dibujarLetras(){
-    tablero.font = "bold 30px 'Montserrat', sans-serif";
+function dibujarLetrasCorrectas(){
+    tablero.font = "bold 45px 'Montserrat', sans-serif";
     tablero.fillStyle = "black";
     tablero.textAlign = "center";
 
@@ -57,13 +60,11 @@ function dibujarLetras(){
             tablero.fillText(letraEscrita, 325 + (anchura * i), 630);
             letrasAcertadas.push(letraEscrita);
         }
-        document.querySelector("#letra-elegida").focus();
-        document.querySelector("#letra-elegida").value = "";
     }
     victoria();
 }
 
-function dibujarLetrasUsadas(){
+function dibujarPersona(){
 
     if(!palabraSecretaSeparada.includes(letraEscrita) && (!letraEscrita == "")){
 
@@ -101,7 +102,6 @@ function dibujarLetrasUsadas(){
             if(intentosFallidos == 9){
                 dibujarPiernaDerch();
                 mensajeDerrota();
-                ocultarBotones();
                 document.querySelector("#boton-jugar-nuevamente").style.display="block"
             }   
     }
@@ -109,19 +109,12 @@ function dibujarLetrasUsadas(){
 
 function letrasErradas(){
 
-    tablero.font = "bold 25px 'Montserrat', sans-serif";
+    tablero.font = "bold 30px 'Montserrat', sans-serif";
     tablero.fillStyle = "black";
-    tablero.fillText(letraEscrita, 325 + (20 * intentosFallidos) , 550);
+    tablero.fillText(letraEscrita, 325 + (30 * intentosFallidos) , 550);
     intentosFallidos++;   
 }
 
-function verBoton(){
-    document.querySelector(".div-texto").style.display = "flex";
-}
-
-function ocultarBotones(){
-    document.querySelector(".div-texto").style.display = "none";
-}
 
 function agregarPalabra(){
     let agregaPalabra = document.querySelector("#campo-agregar-palabra");
@@ -140,7 +133,8 @@ function victoria(){
 
     if(arraySinRepetidos.length == arraySinRepetidos2.length){
         mensajeVictoria();
-        ocultarBotones();
         document.querySelector("#boton-jugar-nuevamente").style.display="block";
     }
 }
+
+

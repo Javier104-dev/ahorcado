@@ -141,7 +141,7 @@ function dibujarPiernaDerch(){
 
 function mensajeVictoria(){
     tablero.font = "bold 45px 'Montserrat', sans-serif";
-    tablero.fillStyle = "#800000";
+    tablero.fillStyle = "blue";
     tablero.textAlign = "center";
 
     tablero.fillText("Felicidades", 600, 350);

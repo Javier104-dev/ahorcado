@@ -59,15 +59,6 @@ h1{
     transform: scale(1);
 }
 
-.div-texto{
-    display: none;
-    position: absolute;
-    flex-direction: column; /*pone en columna los items que estan dentro del div flex*/
-    top: 80%; 
-    left:43%;
-    align-items: center;
-}
-
 .campo-texto{
     width: 60px;
     height: 30px;
@@ -80,7 +71,7 @@ h1{
 
 #boton-jugar-nuevamente{
     position: absolute;
-    top:67%; 
+    bottom: 170px; 
     left:44%;
     border: 0;
     width: 200px;
@@ -100,28 +91,6 @@ h1{
 }
 
 #boton-jugar-nuevamente:active{
-    background: rgb(41, 146, 231);
-    transform: scale(1);
-}
-
-.div-texto button{
-    border: 0;
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    background: rgb(41, 146, 231);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.1s;
-    box-shadow: 5px 5px 7px #08090c;
-}
-
-.div-texto button:hover{
-    background: rgb(5, 62, 109);
-    transform: scale(1.1);
-}
-
-.div-texto button:active{
     background: rgb(41, 146, 231);
     transform: scale(1);
 }
@@ -160,18 +129,13 @@ footer p{
         margin: 2em 25%;
     }
 
-    .div-texto{
-        top: 510px;
-        left: 25%;
-    }
-
     #boton-nuevo-juego{
         top: 60%;
         left: 33%
     }
 
     #boton-jugar-nuevamente{
-        top: 60%;
+        bottom: 170px;
         left: 33%
     }
 
