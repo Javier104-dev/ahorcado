@@ -31,10 +31,7 @@ document.querySelector("#boton-agregar-palabra").onclick = function(){
     agregarPalabra()
 }
 
-
-
 document.querySelector("#boton-jugar-nuevamente").onclick = function(){
-
     location.reload();
 }
 
@@ -46,7 +43,6 @@ function escogerPalabraSecreta(){
 
 function ocultarFrente(){
     document.querySelector("#frente-pagina").style.display = "none";
-
 }
 
 function dibujarLetrasCorrectas(){
@@ -140,3 +136,22 @@ function victoria(){
 }
 
 
+
+
+function verificarTeclaMobile() {
+    MOBILEINPUT.addEventListener("input", function (e) {
+      setTimeout(() => {
+        MOBILEINPUT.value = "";
+      }, 150);
+      let letraPresionada = e.data;
+      letraSeleccionada = letraPresionada;
+      let padron = /[A-Z]/g;
+      let resultadoPadron = padron.test(letraPresionada);
+  
+      if (resultadoPadron != true) {
+          alert( "INGRESE LETRAS EN MAYUSCULAS")
+      } else {
+        dibujarLetra();
+      }
+    });
+  }
