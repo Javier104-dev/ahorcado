@@ -90,7 +90,7 @@ function dibujarPersona(){
     const arraySinRepetidos = [...new Set(palabraSecretaSeparada)];
     const arraySinRepetidos2 = [...new Set(letrasAcertadas)];
 
-    if(!palabraSecretaSeparada.includes(letraEscrita) && (intentosFallidos <= 8 && arraySinRepetidos.length != arraySinRepetidos2.length)){
+    if(!palabraSecretaSeparada.includes(letraEscrita) && (intentosFallidos <= 8) && (arraySinRepetidos.length != arraySinRepetidos2.length)){
         
         letrasErradas();
         dibujarTroncoPrincipal();
