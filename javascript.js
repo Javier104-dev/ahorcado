@@ -4,7 +4,9 @@ let palabraSecreta = "";
 let palabraSecretaSeparada = "";
 let letraEscrita = "";
 let letrasAcertadas = [];
+let letrasDuplicadas = [];
 let intentosFallidos = 0;
+
 
 document.querySelector("#iniciar-juego").onclick = function(){
     ocultarFrente();
@@ -14,19 +16,34 @@ document.querySelector("#iniciar-juego").onclick = function(){
     console.log(palabras);
     console.log(palabraSecreta);
 
-    letraEscrita = document.querySelector("#teclado").value;
     
-
     document.onkeydown = function letrasIngresadas(e){
 
         letraEscrita = e.key.toUpperCase();
 
         if(/^[A-Z]$/.test(letraEscrita)){
 
-        dibujarLetrasCorrectas();
-        dibujarPersona();
+        filtroLetrasRepetidas()
         console.log(letraEscrita)
         }
+    }
+}
+
+function filtroLetrasRepetidas(){
+
+    let estado = true;
+
+    for (let i = 0; i < letrasDuplicadas.length; i++) {
+        if (letraEscrita == letrasDuplicadas[i]) {
+            estado = false;
+        }
+    }
+    
+    if (estado == true) {
+        letrasDuplicadas.push(letraEscrita);
+        console.log(letrasDuplicadas);
+        dibujarLetrasCorrectas();
+        dibujarPersona();
     }
 }
 
@@ -49,29 +66,35 @@ function ocultarFrente(){
 }
 
 function dibujarLetrasCorrectas(){
-    tablero.font = "bold 45px 'Montserrat', sans-serif";
-    tablero.fillStyle = "black";
-    tablero.textAlign = "center";
 
-    let anchura = 700/palabraSecretaSeparada.length;
-    
-    for (let i = 0; i <palabraSecretaSeparada.length; i++){
+    if(intentosFallidos <= 8 ){
+        tablero.font = "bold 45px 'Montserrat', sans-serif";
+        tablero.fillStyle = "black";
+        tablero.textAlign = "center";
+
+        let anchura = 700/palabraSecretaSeparada.length;
         
-        if (letraEscrita == palabraSecretaSeparada[i] ){
-            tablero.fillText(letraEscrita, 325 + (anchura * i), 630);
-            letrasAcertadas.push(letraEscrita);
+        for (let i = 0; i <palabraSecretaSeparada.length; i++){
+            
+            if (letraEscrita === palabraSecretaSeparada[i] ){
+                tablero.fillText(letraEscrita, 325 + (anchura * i), 630);
+                letrasAcertadas.push(letraEscrita);
+            }
         }
-    }
     victoria();
+    }
 }
 
 function dibujarPersona(){
 
-    if(!palabraSecretaSeparada.includes(letraEscrita) && (!letraEscrita == "")){
+    const arraySinRepetidos = [...new Set(palabraSecretaSeparada)];
+    const arraySinRepetidos2 = [...new Set(letrasAcertadas)];
 
+    if(!palabraSecretaSeparada.includes(letraEscrita) && (intentosFallidos <= 8 && arraySinRepetidos.length != arraySinRepetidos2.length)){
+        
         letrasErradas();
         dibujarTroncoPrincipal();
- 
+    
             if(intentosFallidos == 2 ){
                 dibujarTronco2();
             }
@@ -104,16 +127,16 @@ function dibujarPersona(){
                 dibujarPiernaDerch();
                 mensajeDerrota();
                 document.querySelector("#boton-jugar-nuevamente").style.display="block"
-            }   
+            }      
     }
 }
 
 function letrasErradas(){
-
     tablero.font = "bold 30px 'Montserrat', sans-serif";
     tablero.fillStyle = "black";
     tablero.fillText(letraEscrita, 325 + (30 * intentosFallidos) , 550);
     intentosFallidos++;   
+
 }
 
 
@@ -137,3 +160,4 @@ function victoria(){
         document.querySelector("#boton-jugar-nuevamente").style.display="block";
     }
 }
+
