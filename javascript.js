@@ -15,7 +15,7 @@ document.querySelector("#iniciar-juego").onclick = function(){
     dibujarGuiones();
     console.log(palabras);
     console.log(palabraSecreta);
-
+    console.log(letrasDuplicadas);
     
     document.onkeydown = function letrasIngresadas(e){
 
@@ -28,6 +28,16 @@ document.querySelector("#iniciar-juego").onclick = function(){
         }
     }
 }
+/*
+function filtroLetrasRepetidas(){
+    if(!letrasDuplicadas.includes(letraEscrita)) {
+        letrasDuplicadas.push(letraEscrita);             //funciona simplificada y mejor?
+        console.log(letrasDuplicadas);
+        dibujarLetrasCorrectas();
+        dibujarPersona();
+    }
+}
+*/
 
 function filtroLetrasRepetidas(){
 
