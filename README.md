@@ -41,14 +41,16 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 ### Página de inicio
 <p align='left'>
   <img
+    alt='Pagina de inicio'
     width='400'
-    src='https://user-images.githubusercontent.com/105408069/195968900-162b1ca4-4781-4625-abbd-04f6a6c73816.png'
+    src='https://github.com/Javier104-dev/ahorcado/assets/105408069/a4609c14-b241-4d02-bb79-6b39a5ec1358.png'
   >
 </p>
 
 ### Mensaje de victoria
 <p align='left'>
   <img
+    alt='Mensaje de victoria'
     width='400'
     src='https://user-images.githubusercontent.com/105408069/195968900-162b1ca4-4781-4625-abbd-04f6a6c73816.png'
   >
@@ -57,8 +59,9 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 ### Mensaje de derrota
 <p align='left'>
   <img
+    alt='Mensaje de derrota'
     width='400'
-    src='https://user-images.githubusercontent.com/105408069/195968900-162b1ca4-4781-4625-abbd-04f6a6c73816.png'
+    src='https://github.com/Javier104-dev/ahorcado/assets/105408069/73e02756-3f3f-4aef-9146-35e080a58b09.png'
   >
 </p>
 
