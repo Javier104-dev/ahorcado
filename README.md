@@ -1,20 +1,67 @@
-https://javier104-dev.github.io/Ahorcado/
+<h1 align='center'>Juego del Ahorcado</h1>
 
-Mi juego del ahorcado:
+### Introducción
+Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En esta ocasión tuvimos que crear un ahorcado utilizando canvas.
 
-Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En esta ocasion tuvimos que crear un ahorcado utilizando canvas, aun faltan detalles por pulir como el diseño de la pagina y la version responsiva pero pude realizar la mayor parte del proyecto y estoy conforme, por ahora, por lo avanzado.
+### Especificaciones:
+- Versión: 1.0.0
+- Autor: Javier Anibal Villca
+- Repositorio GitHub: git+https://github.com/Javier104-dev/ahorcado.git
 
-Requisitos del challenge:
+### GitHub Pages
+- https://javier104-dev.github.io/Ahorcado/
+
+<h2 align='center'>Instrucciones de instalación</h2>
+
+### Requerimientos:
+- IDE - Visual Studio Code v1.84.2
+
+### Preparando el ambiente:
+- Descargar o clonar el repositorio.
+- Copiar la ruta absoluta de `index.html` y ejecutarla en el navegador.
+
+<h2 align='center'>Requisitos del Challenge</h2>
+
+### Obligatorios:
 - Debe funcionar solo con letras mayúsculas;
 - No deben ser utilizadas letras con acentos ni caracteres especiales;
-- Al completar o dibujo de la horca, debe ser mostrado un mensaje "Fin del juego" en la pantalla;
-- Si se completa la palabra correcta antes de que se acaben los intentos, debe ser mostrado un mensaje de "Ganaste, Felicidades!" en la pantalla.
+- Al completar o dibujo de la horca, debe ser mostrado un mensaje 'Fin del juego' en la pantalla;
+- Si se completa la palabra correcta antes de que se acaben los intentos, debe ser mostrado un mensaje de 'Ganaste, Felicidades!' en la pantalla.
 - La página debe tener los guiones indicando cada letra da palabra, separados por un espacio;
-- Para comenzar el juego la página debe tener un botón de "Iniciar Juego";
+- Para comenzar el juego la página debe tener un botón de 'Iniciar Juego';
 - No debe ser posible escribir números dentro del juego.
 - Las letras equivocadas deben aparecer en la pantalla, pero no pueden aparecer de forma repetida;
 - Las letras correctas deben aparecer en la pantalla encima de los guiones, en la posición correcta em relación a la palabra.
 
-Extras:
-- La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
-![ahorcado](https://user-images.githubusercontent.com/105408069/195968900-162b1ca4-4781-4625-abbd-04f6a6c73816.png)
+### Opcionales:
+- La página debe tener un botón 'Agregar palabra' para la inserción de texto con la finalidad de adicionar nuevas palabras al juego.
+
+<h2 align='center'>Lo que Encontrarás:</h2>
+
+### Página de inicio
+<p align='left'>
+  <img
+    width='400'
+    src='https://user-images.githubusercontent.com/105408069/195968900-162b1ca4-4781-4625-abbd-04f6a6c73816.png'
+  >
+</p>
+
+### Mensaje de victoria
+<p align='left'>
+  <img
+    width='400'
+    src='https://user-images.githubusercontent.com/105408069/195968900-162b1ca4-4781-4625-abbd-04f6a6c73816.png'
+  >
+</p>
+
+### Mensaje de derrota
+<p align='left'>
+  <img
+    width='400'
+    src='https://user-images.githubusercontent.com/105408069/195968900-162b1ca4-4781-4625-abbd-04f6a6c73816.png'
+  >
+</p>
+
+## Autor:
+| [<img src='https://avatars.githubusercontent.com/u/105408069?v=4' width=115><br><sub>Javier Anibal Villca</sub>](https://github.com/Javier104-dev)  |
+| :---: |
