@@ -11,15 +11,6 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 ### GitHub Pages
 - https://javier104-dev.github.io/Ahorcado/
 
-<h2 align='center'>Instrucciones de instalación</h2>
-
-### Requerimientos:
-- IDE - Visual Studio Code v1.84.2
-
-### Preparando el ambiente:
-- Descargar o clonar el repositorio.
-- Copiar la ruta absoluta de `index.html` y ejecutarla en el navegador.
-
 <h2 align='center'>Requisitos del Challenge</h2>
 
 ### Obligatorios:
@@ -36,35 +27,48 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 ### Opcionales:
 - La página debe tener un botón 'Agregar palabra' para la inserción de texto con la finalidad de adicionar nuevas palabras al juego.
 
-<h2 align='center'>Lo que Encontrarás:</h2>
+<h2 align='center'>Instrucciones de instalación</h2>
+
+### Requerimientos:
+- IDE - Visual Studio Code v1.84.2
+
+### Preparando el ambiente:
+- Descargar o clonar el repositorio.
+- Copiar la ruta absoluta de `index.html` y ejecutarla en el navegador.
+
+<h2 align='center'>Lo que Encontrarás</h2>
 
 ### Página de inicio
 <p align='left'>
   <img
     alt='Pagina de inicio'
-    width='400'
+    width='500'
     src='https://github.com/Javier104-dev/ahorcado/assets/105408069/a4609c14-b241-4d02-bb79-6b39a5ec1358'
   >
 </p>
+
+<br>
 
 ### Mensaje de victoria
 <p align='left'>
   <img
     alt='Mensaje de victoria'
-    width='400'
+    width='500'
     src='https://github.com/Javier104-dev/ahorcado/assets/105408069/5b1f901d-f609-4363-aadd-2d75ed0f6889'
   >
 </p>
+
+<br>
 
 ### Mensaje de derrota
 <p align='left'>
   <img
     alt='Mensaje de derrota'
-    width='400'
+    width='500'
     src='https://github.com/Javier104-dev/ahorcado/assets/105408069/73e02756-3f3f-4aef-9146-35e080a58b09'
   >
 </p>
 
 ## Autor:
-| [<img src='https://avatars.githubusercontent.com/u/105408069?v=4' width=115><br><sub>Javier Anibal Villca</sub>](https://github.com/Javier104-dev)  |
-| :---: |
+| [<img src='https://avatars.githubusercontent.com/u/105408069?v=4' width=115><br><sub>Javier Anibal Villca</sub>](https://github.com/Javier104-dev) |
+| :------------------------------------------------------------------------------------------------------------------------------------------------: |
