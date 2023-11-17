@@ -69,6 +69,10 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
   >
 </p>
 
-## Autor:
+<br>
+
+---
+
+### Autor:
 | [<img src='https://avatars.githubusercontent.com/u/105408069?v=4' width=115><br><sub>Javier Anibal Villca</sub>](https://github.com/Javier104-dev) |
 | :------------------------------------------------------------------------------------------------------------------------------------------------: |
