@@ -9,7 +9,7 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 - Repositorio GitHub: git+https://github.com/Javier104-dev/ahorcado.git
 
 ### GitHub Pages
-- https://javier104-dev.github.io/Ahorcado/
+- https://javier104-dev.github.io/ahorcado/
 
 <h2 align='center'>Requisitos del Challenge</h2>
 
@@ -42,7 +42,6 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 <p align='left'>
   <img
     alt='Pagina de inicio'
-    width='500'
     src='https://github.com/Javier104-dev/ahorcado/assets/105408069/a4609c14-b241-4d02-bb79-6b39a5ec1358'
   >
 </p>
@@ -52,7 +51,6 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 <p align='left'>
   <img
     alt='Mensaje de victoria'
-    width='500'
     src='https://github.com/Javier104-dev/ahorcado/assets/105408069/5b1f901d-f609-4363-aadd-2d75ed0f6889'
   >
 </p>
@@ -62,7 +60,6 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 <p align='left'>
   <img
     alt='Mensaje de derrota'
-    width='500'
     src='https://github.com/Javier104-dev/ahorcado/assets/105408069/73e02756-3f3f-4aef-9146-35e080a58b09'
   >
 </p>
