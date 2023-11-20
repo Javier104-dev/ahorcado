@@ -31,12 +31,13 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 
 ### Requerimientos:
 - IDE - Visual Studio Code v1.84.2
+- Git v2.43.0
 
 ### Preparando el ambiente:
 - Descargar o clonar el repositorio.
 - Copiar la ruta absoluta de `index.html` y ejecutarla en el navegador.
 
-<h2 align='center'>Lo que Encontrarás</h2>
+<h2 align='center'>Lo que encontrarás</h2>
 
 ### Página de inicio
 <p align='left'>
