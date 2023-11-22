@@ -3,7 +3,7 @@
 ### Introducción
 Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En esta ocasión tuvimos que crear un ahorcado utilizando canvas.
 
-### Especificaciones:
+### Especificaciones
 - Versión: 1.0.0
 - Autor: Javier Anibal Villca
 - Repositorio GitHub: git+https://github.com/Javier104-dev/ahorcado.git
@@ -13,7 +13,7 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 
 <h2 align='center'>Requisitos del Challenge</h2>
 
-### Obligatorios:
+### Obligatorios
 - Debe funcionar solo con letras mayúsculas.
 - No deben ser utilizadas letras con acentos ni caracteres especiales.
 - Al completar o dibujo de la horca, debe ser mostrado un mensaje 'Fin del juego' en la pantalla.
@@ -24,16 +24,16 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 - Las letras equivocadas deben aparecer en la pantalla, pero no pueden aparecer de forma repetida.
 - Las letras correctas deben aparecer en la pantalla encima de los guiones, en la posición correcta em relación a la palabra.
 
-### Opcionales:
+### Opcionales
 - La página debe tener un botón 'Agregar palabra' para la inserción de texto con la finalidad de adicionar nuevas palabras al juego.
 
 <h2 align='center'>Instrucciones de instalación</h2>
 
-### Requerimientos:
+### Requerimientos
 - IDE - Visual Studio Code v1.84.2
 - Git v2.43.0
 
-### Preparando el ambiente:
+### Preparando el ambiente
 - Descargar o clonar el repositorio.
 - Copiar la ruta absoluta de `index.html` y ejecutarla en el navegador.
 
@@ -68,6 +68,6 @@ Segundo proyecto entregado del Programa ONE Oracle junto con Alura Latam. En est
 
 ---
 
-### Autor:
+### Autor
 | [<img src='https://avatars.githubusercontent.com/u/105408069?v=4' width=115><br><sub>Javier Anibal Villca</sub>](https://github.com/Javier104-dev) |
 | :------------------------------------------------------------------------------------------------------------------------------------------------: |
